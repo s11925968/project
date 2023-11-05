@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg position-fixed w-100 z-2 top-0">
       <div className="container">
-        <a href="index.html">
+        <a href="">
           <img src="../../../public/images/icononly.png" alt="logo" className="logo" />
         </a>
         <button
