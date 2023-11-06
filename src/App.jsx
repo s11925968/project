@@ -12,7 +12,6 @@ export default function App() {
     <>
     <Navbar />
     <Routes>
-      <Route path="*" element={<PageNotFound />}/>
       <Route path="/" element={<Home />}/>
       <Route path="/Contact/create" element={<Create />}/>
       <Route path="/Contact/create/createuser" element={<CreateUser />}/>
