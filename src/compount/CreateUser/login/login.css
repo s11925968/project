@@ -1,0 +1,39 @@
+.singin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+input {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+}
