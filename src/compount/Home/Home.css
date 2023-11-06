@@ -25,7 +25,7 @@ a{
   background-color:#c8e2ed;
 }
 .header{
-  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../../public/images/header-img.jpg);
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/images/header-img.jpg);
   height: 100vh;
   background-size:cover;
   background-position: center center;

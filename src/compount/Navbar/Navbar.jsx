@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg w-100 z-2 top-0 position-fixed ">
       <div className="container">
         <Link to="/">
-          <img src="../../../public/images/icononly.png" alt="logo" className="logo" />
+          <img src="icononly.png" alt="logo" className="logo" />
         </Link>
         <button
           className="navbar-toggler"
@@ -51,7 +51,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item " id="about">
                 {
-                  <button onClick={setSweet} className='btn text-info btn-link text-decoration-none d-flex justify-content-center align-items-center'>about</button>
+                  <button onClick={setSweet} className='btn text-info btn-link text-decoration-none'>about</button>
                 }
             </li>
           </ul>
