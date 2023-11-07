@@ -1,6 +1,6 @@
 .singup{
   position: relative;
-  width: 500px;
+  width: 50%;
   height: 50%;
   margin: auto;
   background-color: #ccc;
@@ -53,4 +53,13 @@ button:hover {
   color: red;
   font-size: 12px;
   text-align: left;
+}
+
+@media screen and (max-width:600px){
+  :root{
+    font-size: 12px;
+  }
+  .singup{
+    width: 70%;
+  }
 }

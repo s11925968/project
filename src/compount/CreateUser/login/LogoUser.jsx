@@ -4,7 +4,7 @@ export default function LogoUser() {
   return (
     <>
       <div className="singin">
-        <div>
+        <div className='arrea'>
         <h2>Login</h2>
         <form>
           <label htmlFor="email">Email:</label>
