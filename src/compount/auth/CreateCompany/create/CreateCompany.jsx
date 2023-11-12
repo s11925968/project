@@ -35,7 +35,8 @@ export default function CreateCompany() {
               Sign Up
             </button>
           </form>
-          <div className='mb-2'>
+          <div className='mb-4'>
+            <p className='text-danger'>You don't have an account yet?</p>
             <Link to="/Contact/create/createcompany/login">
               sing in
             </Link>
