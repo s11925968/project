@@ -1,15 +1,13 @@
-.singup{
+.company-sing{
   position: relative;
   width: 50%;
   height: 120vh !important;
   margin: auto;
-  background-color: #ccc;
 
 }
 .signup-form{
   position: absolute;
   top:110px;
-
 }
 h2 {
   text-align: center;
@@ -56,13 +54,12 @@ button:hover {
   text-align: left;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
   :root{
     font-size: 12px;
   }
-  .singup{
-    height: 85vh !important;
-
+  .company-sing{
+    height: 90vh !important;
     width: 70%;
   }
 }

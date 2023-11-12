@@ -36,7 +36,7 @@ export default function CreateUser() {
   }
   return (
     <div>
-      <div className="singup d-flex">
+      <div className="user-sing d-flex ">
         <div className="container signup-form">
           <h2>Sign-Up</h2>
           <form onSubmit={sendData}>

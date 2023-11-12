@@ -10,11 +10,10 @@
 /*end footer*/
 @media screen and (max-width:760px) {
   .footers p {
+    padding-top: 35px!important;
     text-align: center !important;
-    padding-top: 30px !important;
   }
   .footers .images{
-    padding-top: 30px !important;
     text-align: center !important;
     width: 70%;
     margin: auto;

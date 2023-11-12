@@ -1,11 +1,11 @@
 import React from 'react'
-import './singup.css'
+import './company.css'
 import { Link } from 'react-router-dom'
 export default function CreateCompany() {
 
   return (
     <>
-      <div className="singup d-flex">
+      <div className="company-sing d-flex">
         <div className="container signup-form">
           <h2>Sign-Up</h2>
           <form id="signup-form">

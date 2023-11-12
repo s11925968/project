@@ -1,8 +1,8 @@
 
-.singup {
+.user-sing {
   position: relative;
   width: 50%;
-  height: 90vh !important;
+  height: 90vh!important;
   margin: auto;
   background-color:white !important;
 }
@@ -59,7 +59,7 @@ button:hover {
   :root{
     font-size: 12px;
   }
-  .singup{
+  .user-sing{
     width: 70%;
     height: 75vh !important;
 
