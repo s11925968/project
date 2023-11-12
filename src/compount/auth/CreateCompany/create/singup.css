@@ -1,9 +1,10 @@
 .singup{
   position: relative;
   width: 50%;
-  height: 50%;
+  height: 120vh !important;
   margin: auto;
   background-color: #ccc;
+
 }
 .signup-form{
   position: absolute;
@@ -60,6 +61,8 @@ button:hover {
     font-size: 12px;
   }
   .singup{
+    height: 85vh !important;
+
     width: 70%;
   }
 }

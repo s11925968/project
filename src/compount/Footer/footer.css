@@ -1,0 +1,22 @@
+/*start footer*/
+.footers p{
+  font-family: Raleway,sans-serif;
+  font-size: 20px;
+  color:#818181;
+}
+.footers img{
+  width: 30%;
+}
+/*end footer*/
+@media screen and (max-width:760px) {
+  .footers p {
+    text-align: center !important;
+    padding-top: 30px !important;
+  }
+  .footers .images{
+    padding-top: 30px !important;
+    text-align: center !important;
+    width: 70%;
+    margin: auto;
+  }
+}

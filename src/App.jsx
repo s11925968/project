@@ -3,11 +3,12 @@ import { Route, Routes } from 'react-router-dom'
 import Navbar from './compount/Navbar/Navbar.jsx'
 import Home from './compount/Home/Home.jsx'
 import Page from './compount/pageNotFound/Page.jsx'
-import Create from './compount/Create/Create.jsx'
-import CreateUser from './compount/CreateUser/create/CreateUser.jsx'
-import CreateCompany from './compount/CreateCompany/create/CreateCompany.jsx'
-import LogoUser from './compount/CreateUser/login/LogoUser.jsx'
-import LogoCompany from './compount/CreateCompany/login/Login.jsx'
+import Create from './compount/auth/Create/Create.jsx'
+import CreateUser from './compount/auth/CreateUser/create/CreateUser.jsx'
+import CreateCompany from './compount/auth/CreateCompany/create/CreateCompany.jsx'
+import LogoCompany from './compount/auth/CreateCompany/login/Login.jsx'
+import LogoUser from './compount/auth/CreateUser/login/LogoUser.jsx'
+import Footer from './compount/Footer/Footer.jsx'
 export default function App() {
   return (
     <>
@@ -21,6 +22,7 @@ export default function App() {
       <Route path="/Contact/create/createcompany/login" element={<LogoCompany />}/>
       <Route path="/Contact/create/logo" element={<LogoUser />}/>
     </Routes>
+    <Footer />
     </>
   )
 }

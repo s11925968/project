@@ -1,14 +1,14 @@
-.singup{
+
+.singup {
   position: relative;
   width: 50%;
-  height: 50%;
+  height: 90vh !important;
   margin: auto;
-  background-color: #ccc;
+  background-color:white !important;
 }
 .signup-form{
   position: absolute;
   top:110px;
-
 }
 h2 {
   text-align: center;
@@ -61,5 +61,7 @@ button:hover {
   }
   .singup{
     width: 70%;
+    height: 75vh !important;
+
   }
 }

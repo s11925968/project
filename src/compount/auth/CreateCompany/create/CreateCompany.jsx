@@ -5,7 +5,7 @@ export default function CreateCompany() {
 
   return (
     <>
-      <div className="singup d-flex  vh-80">
+      <div className="singup d-flex">
         <div className="container signup-form">
           <h2>Sign-Up</h2>
           <form id="signup-form">

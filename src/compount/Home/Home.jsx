@@ -1,6 +1,5 @@
 import React from 'react'
 import './Home.css'
-import Create from '../Create/Create.jsx'
 import { Link } from 'react-router-dom'
 
 export default function Home() {
