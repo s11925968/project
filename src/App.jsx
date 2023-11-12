@@ -19,7 +19,6 @@ export default function App() {
       <Route path="/Contact/create/createuser" element={<CreateUser />}/>
       <Route path="/Contact/create/createcompany" element={<CreateCompany />}/>
       <Route path="/Contact/create/createcompany/login" element={<LogoCompany />}/>
-
       <Route path="/Contact/create/logo" element={<LogoUser />}/>
     </Routes>
     </>

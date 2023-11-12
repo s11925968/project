@@ -1,19 +1,20 @@
-import React, { useState } from 'react'
-import './Navbar.css'
-import Swal from 'sweetalert2';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import "./Navbar.css";
+import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  function setSweet(){
+  function setSweet() {
     Swal.fire({
-      title: 'Tourpulse is a company based in Palestine that specializes in providing travel and tourism services. Established with the aim of creating memorable and seamless travel experiences, Tourpulse is committed to offering exceptional services to both local and international travelers.    ',
+      title:
+        "Tourpulse is a company based in Palestine that specializes in providing travel and tourism services. Established with the aim of creating memorable and seamless travel experiences, Tourpulse is committed to offering exceptional services to both local and international travelers.    ",
       showClass: {
-        popup: 'animate__animated animate__fadeInDown'
+        popup: "animate__animated animate__fadeInDown",
       },
       hideClass: {
-        popup: 'animate__animated animate__fadeOutUp'
-      }
-    })
+        popup: "animate__animated animate__fadeOutUp",
+      },
+    });
   }
   return (
     <nav className="navbar navbar-expand-lg w-100 z-2 top-0 position-fixed ">
@@ -35,7 +36,11 @@ export default function Navbar() {
         <div className="collapse navbar-collapse " id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
             <li className="nav-item">
-              <Link className="nav-link active text-info" aria-current="page" to="/">
+              <Link
+                className="nav-link active text-info"
+                aria-current="page"
+                to="/"
+              >
                 Home
               </Link>
             </li>
@@ -49,10 +54,39 @@ export default function Navbar() {
                 Trips
               </a>
             </li>
+            <li className="nav-item  text-info"></li>
             <li className="nav-item " id="about">
-                {
-                  <button onClick={setSweet} className='btn nav-link text-info btn-link text-decoration-none'>about</button>
-                }
+              {
+                <button
+                  onClick={setSweet}
+                  className="btn nav-link text-warning btn-link text-decoration-none"
+                >
+                  about
+                </button>
+              }
+            </li>
+            <li className="nav-item dropdown me-2">
+              <a
+                className=" dropdown-toggle text-info text-decoration-none"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Login
+              </a>
+              <ul className="dropdown-menu">
+                <li>
+                  <Link className="nav-link  text-info"aria-current="page"to="/Contact/create/logo" >
+                    Login user
+                  </Link>
+                </li>
+                <li>
+                  <Link className="nav-link  text-info"aria-current="page"to="/Contact/create/createcompany/login" >
+                    Login company
+                  </Link>
+                </li>
+              </ul>
             </li>
           </ul>
           <form className="d-flex" role="search">

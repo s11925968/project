@@ -13,7 +13,7 @@ export default function Home() {
       <h1 className="text-white">Travel &amp; Tour Booking<br /> WordPress Theme</h1>
       <span>take care of taking</span>
       <div className="content-public rounded-pill py-2 mt-3 bg-main-color m-auto">
-        <Link to="/Contact/create" className='text-decoration-none'>CONTACT US</Link>
+        <Link to="/Contact/create" className='text-decoration-none'>create account</Link>
       </div>
     </div>
   </div>
