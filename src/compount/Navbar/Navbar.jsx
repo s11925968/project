@@ -65,9 +65,9 @@ export default function Navbar() {
                 </button>
               }
             </li>
-            <li className="nav-item dropdown me-2">
+            <li className="nav-item dropdown me-2 mb-4">
               <a
-                className=" dropdown-toggle text-info text-decoration-none"
+                className="down dropdown-toggle text-info text-decoration-none"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"

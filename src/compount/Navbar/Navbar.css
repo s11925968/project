@@ -70,7 +70,10 @@ a{
   .navbar{
     background-color: #bbbdbf!important;
   }
-  .navbar .nav-link{
+  .nav-item .nav-link{
+    color:black !important;
+  }
+  .nav-item .down{
     color:black !important;
   }
 }
