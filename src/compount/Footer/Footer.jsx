@@ -10,7 +10,7 @@ export default function Footer() {
         <p className="m-0 p-0 text-start">©2018 Ecologytheme. All Rights Reserved.</p>
       </div>
       <div className="images col-md-4 text-center">
-        <img src="../../../public/images/icononly.png" alt="logo in footer" />
+        <img src="/images/icononly.png" alt="logo in footer" />
       </div>
       <div className="col-md-4">
         <p className="m-0 p-0 text-end text-center">Made By <br/><span className="text-info">Sameh Issa , Gazal Masri <br/>Moatsem Ayash</span></p>
