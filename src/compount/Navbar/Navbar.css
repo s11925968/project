@@ -67,9 +67,6 @@ a{
   :root{
     font-size: 12px;
   }
-  .navbar{
-    background-color: #bbbdbf!important;
-  }
   .nav-item .nav-link{
     color:black !important;
   }

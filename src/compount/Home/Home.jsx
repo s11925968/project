@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
+import Footer from '../Footer/Footer.jsx'
 
 export default function Home() {
   return (
@@ -16,7 +17,11 @@ export default function Home() {
       </div>
     </div>
   </div>
+  
 </header>
+<footer>
+<Footer />
+</footer>
     </div>
   )
 }

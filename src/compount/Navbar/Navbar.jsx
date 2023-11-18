@@ -15,7 +15,6 @@ export default function Navbar() {
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
-    console.log(scrollPosition);
     // Change background color if the user has scrolled, for example, 100 pixels
     if (scrollPosition > 100) {
       setNavbarBackground("white");
@@ -39,7 +38,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`navbar navbar-expand-lg w-100 z-2 top-0 position-fixed`}
+      className={`navbar navbar-expand-lg w-100 z-2 top-0 position-fixed `}
       style={{ backgroundColor: navbarBackground }} // Set dynamic background color based on state
     >
       <div className="container">

@@ -8,7 +8,6 @@ import CreateUser from './compount/auth/CreateUser/create/CreateUser.jsx'
 import CreateCompany from './compount/auth/CreateCompany/create/CreateCompany.jsx'
 import LogoCompany from './compount/auth/CreateCompany/login/Login.jsx'
 import LogoUser from './compount/auth/CreateUser/login/LogoUser.jsx'
-import Footer from './compount/Footer/Footer.jsx'
 export default function App() {
   return (
     <>
@@ -22,7 +21,6 @@ export default function App() {
       <Route path="/Contact/create/createcompany/login" element={<LogoCompany />}/>
       <Route path="/Contact/create/logo" element={<LogoUser />}/>
     </Routes>
-    <Footer />
     </>
   )
 }

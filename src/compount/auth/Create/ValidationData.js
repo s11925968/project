@@ -1,11 +1,11 @@
 export const validationUserData=(User)=>{
   let errors={};
-  if (User.name.trim()=="")
+  if (User.userName.trim()=="")
   {
-    errors.name="username is required";
+    errors.userName="username is required";
   }
-  else if(User.name.trim().length<5){
-    errors.name="username must be at least 9 characters";
+  else if(User.userName.trim().length<5){
+    errors.userName="username must be at least 9 characters";
   }
 
   if (User.email.trim()=="")

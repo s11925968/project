@@ -1,18 +1,20 @@
 import React, { useState } from 'react'
 import './CreatUser.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { validationUserData } from '../../Create/ValidationData.js';
 import { toast } from 'react-toastify';
+
 export default function CreateUser() {
+  const navigite=useNavigate();
   let [user,setUser]=useState({
-    name:'',
+    userName:'',
     email:'',
     password:'',
     age:'',
   });
   let [error,setError]=useState({
-    name:'',
+    userName:'',
     email:'',
     password:'',
     age:'',
@@ -27,11 +29,12 @@ export default function CreateUser() {
     if(Object.keys(validationUserData(user)).length>0){
       setError(validationUserData(user));
     }else{
-      const {data}=await axios.post('https://crud-users-gold.vercel.app/users/',user);
-      if(data.message=='success'){
+      const {data}=await axios.post('https://gazaaaal.vercel.app/auth/signup',user);
+      if(data.message=='success hahahaha'){
         toast.success('done!');
-       //navigite('/users/index');
+        navigite('/');
       }
+      console.log(data);
     }
   }
   return (
@@ -40,9 +43,9 @@ export default function CreateUser() {
         <div className="container signup-form">
           <h2>Sign-Up</h2>
           <form onSubmit={sendData}>
-            <label htmlFor="firstName">Name:</label>
-            <input type="text" id="Name" name="name" onChange={changeUser} />
-            {error.name && <p className="text-danger">{error.name}</p>}
+            <label htmlFor="userName">userName:</label>
+            <input type="text" id="userName" name="userName" onChange={changeUser} />
+            {error.userName && <p className="text-danger">{error.userName}</p>}
 
             <label htmlFor="age">Age:</label>
 
