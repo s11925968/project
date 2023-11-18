@@ -30,7 +30,7 @@ export default function CreateUser() {
       setError(validationUserData(user));
     }else{
       const {data}=await axios.post('https://gazaaaal.vercel.app/auth/signup',user);
-      if(data.message=='success hahahaha'){
+      if(data.message=='success'){
         toast.success('done!');
         navigite('/');
       }
