@@ -1,3 +1,15 @@
 .footers{
   height: 20vh!important;
 }
+.footers .images img{
+  width: 60%;
+}
+
+@media screen and (max-width:600px){
+  :root{
+    font-size: 12px;
+  }
+  .footers .images img{
+    width: 40%;
+  }
+}

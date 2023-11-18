@@ -46,7 +46,7 @@ export default function Navbar() {
           <img src="/images/icononly.png" alt="logo" className="logo" />
         </Link>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler bg-primary bg-gradient"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -56,8 +56,8 @@ export default function Navbar() {
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div className="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0  ">
             <li className="nav-item">
               <Link
                 className="nav-link active text-info"
