@@ -1,13 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  const [navbarBackground, setNavbarBackground] = useState(""); // State to manage navbar background color
+
+  useEffect(()=> {
+    window.addEventListener("scroll", handleScroll); // Adding scroll event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll); // Removing scroll event listener on component unmount
+    };
+  },[]);
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    console.log(scrollPosition);
+    // Change background color if the user has scrolled, for example, 100 pixels
+    if (scrollPosition > 100) {
+      setNavbarBackground("white");
+    } else {
+      setNavbarBackground(""); // Revert back to default background color
+    }
+  };
+
   function setSweet() {
     Swal.fire({
       title:
-        "Tourpulse is a company based in Palestine that specializes in providing travel and tourism services. Established with the aim of creating memorable and seamless travel experiences, Tourpulse is committed to offering exceptional services to both local and international travelers.    ",
+        "Tourpulse is a company based in Palestine that specializes in providing travel and tourism services. Established with the aim of creating memorable and seamless travel experiences, Tourpulse is committed to offering exceptional services to both local and international travelers.",
       showClass: {
         popup: "animate__animated animate__fadeInDown",
       },
@@ -16,8 +36,12 @@ export default function Navbar() {
       },
     });
   }
+
   return (
-    <nav className="navbar navbar-expand-lg w-100 z-2 top-0 position-fixed ">
+    <nav
+      className={`navbar navbar-expand-lg w-100 z-2 top-0 position-fixed`}
+      style={{ backgroundColor: navbarBackground }} // Set dynamic background color based on state
+    >
       <div className="container">
         <Link to="/">
           <img src="/images/icononly.png" alt="logo" className="logo" />
