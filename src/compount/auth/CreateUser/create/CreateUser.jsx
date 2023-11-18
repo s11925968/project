@@ -22,7 +22,7 @@ export default function CreateUser() {
   const changeUser=(e)=>{
     const {name,value}=e.target;
     setUser({...user,[name]:value});
-    console.log(user);
+    //console.log(user);
   };
   const sendData=async (e)=>{
     e.preventDefault();
@@ -31,7 +31,7 @@ export default function CreateUser() {
     }else{
       const {data}=await axios.post('https://gazaaaal.vercel.app/auth/signup',user);
       if(data.message=='success'){
-        toast.success('done!');
+        toast.success(`welcom your website`);
         navigite('/');
       }
       console.log(data);
